@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_night_2/slide/about/about_slide.dart';
 import 'package:flutter_night_2/slide/about_deck/about_deck_slide.dart';
@@ -21,7 +22,14 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlutterDeckApp(
-      configuration: const FlutterDeckConfiguration(),
+      configuration: const FlutterDeckConfiguration(
+        controls: FlutterDeckControlsConfiguration(
+          shortcuts: FlutterDeckShortcutsConfiguration(
+            nextSlide: SingleActivator(LogicalKeyboardKey.enter),
+            previousSlide: SingleActivator(LogicalKeyboardKey.backspace),
+          ),
+        ),
+      ),
       lightTheme: FlutterDeckThemeData(
         theme: ThemeData(
           scaffoldBackgroundColor: Colors.white,
