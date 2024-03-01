@@ -55,7 +55,7 @@ class MainApp extends StatelessWidget {
         EndSlide(),
       ],
       speakerInfo: const FlutterDeckSpeakerInfo(
-        name: 'ちゅーやん',
+        name: 'ちゅーやん（中條 剛）',
         description: 'フリーランス Flutter アプリ開発者',
         imagePath: 'assets/images/me.jpg',
         socialHandle: '@chooyan_i18n',
