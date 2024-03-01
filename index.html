@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -26,29 +27,46 @@
   <meta name="apple-mobile-web-app-title" content="flutter_night_2">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
+  <!-- OGP -->
+  <meta property="og:type" content="ページの種類を定義">
+  <meta property="og:title" content="Flutterで作る「動的」な登壇資料">
+  <meta property="og:description" content="Flutter Night 登壇資料">
+  <meta property="og:image"
+    content="https://github.com/chooyan-eng/flutter_night_2_slide/assets/20849526/ce4b81c6-50f5-40b5-9f28-d42007b95cc5">
+  <meta property="og:url" content="https://chooyan-eng.github.io/flutter_night_2_slide">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@chooyan_i18n">
+  <meta name="twitter:title" content="Flutterで作る「動的」な登壇資料">
+  <meta name="twitter:description" content="Flutter Night 登壇資料">
+  <meta name="twitter:image"
+    content="https://github.com/chooyan-eng/flutter_night_2_slide/assets/20849526/ce4b81c6-50f5-40b5-9f28-d42007b95cc5">
+
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>flutter_night_2</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "3461427549";
+    const serviceWorkerVersion = "2178739388";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
+
 <body>
   <script>
-    window.addEventListener('load', function(ev) {
+    window.addEventListener('load', function (ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
             appRunner.runApp();
           });
         }
@@ -56,4 +74,5 @@
     });
   </script>
 </body>
+
 </html>
