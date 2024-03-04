@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_night_2/slide/about_deck/about_deck_page.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class AboutDeckSlide extends FlutterDeckSlideWidget {
   const AboutDeckSlide()
@@ -17,8 +18,8 @@ class AboutDeckSlide extends FlutterDeckSlideWidget {
     return FlutterDeckSlide.template(
       contentBuilder: (_) => const AboutDeckPage(),
       headerBuilder: (context) {
-        return const FlutterDeckHeader(
-          title: 'flutter_deck とは',
+        return FlutterDeckHeader(
+          title: AppLocalizations.of(context)!.aboutFlutterDeck,
         );
       },
     );

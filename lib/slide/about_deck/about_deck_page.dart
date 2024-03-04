@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_night_2/component/components.dart';
 import 'package:gap/gap.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class AboutDeckPage extends StatelessWidget {
   const AboutDeckPage({super.key});
@@ -13,23 +14,34 @@ class AboutDeckPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const RichParagraph(
+            RichParagraph(
               [
                 TextSpan(
-                  text: '「スライドみたいに動く Flutter アプリ」',
-                  style: TextStyle(
+                  text: AppLocalizations.of(context)!.aboutFlutterDeck11,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w700,
+                    color: Colors.blue,
+                  ),
+                ),
+                TextSpan(
+                  text: AppLocalizations.of(context)!.aboutFlutterDeck12,
+                ),
+                TextSpan(
+                  text: AppLocalizations.of(context)!.aboutFlutterDeck13,
+                  style: const TextStyle(
                       fontWeight: FontWeight.w700, color: Colors.blue),
                 ),
-                TextSpan(text: 'を作ってくれるパッケージ。'),
               ],
             ),
             const Gap(32),
-            const RichParagraph(
+            RichParagraph(
               [
-                TextSpan(text: 'Flutter アプリなので、'),
                 TextSpan(
-                  text: 'Flutter でできることはなんでもできる！',
-                  style: TextStyle(
+                  text: AppLocalizations.of(context)!.aboutFlutterDeck21,
+                ),
+                TextSpan(
+                  text: AppLocalizations.of(context)!.aboutFlutterDeck22,
+                  style: const TextStyle(
                     fontWeight: FontWeight.w700,
                     color: Colors.blue,
                   ),
@@ -37,7 +49,7 @@ class AboutDeckPage extends StatelessWidget {
               ],
             ),
             const Gap(32),
-            const Paragraph('この資料も flutter_deck で作っています 😊'),
+            Paragraph(AppLocalizations.of(context)!.aboutFlutterDeck3),
             const Gap(32),
             Expanded(
               child: Center(
@@ -47,7 +59,7 @@ class AboutDeckPage extends StatelessWidget {
                       child: Image.asset('assets/images/coding_image.png'),
                     ),
                     const Gap(8),
-                    const Paragraph('このページの作成画面'),
+                    Paragraph(AppLocalizations.of(context)!.buildingScreen),
                   ],
                 ),
               ),

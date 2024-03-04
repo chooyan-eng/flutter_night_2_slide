@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_night_2/slide/couter_app/couter_app_page.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CounterAppSlide extends FlutterDeckSlideWidget {
   const CounterAppSlide()
@@ -17,8 +18,8 @@ class CounterAppSlide extends FlutterDeckSlideWidget {
     return FlutterDeckSlide.template(
       contentBuilder: (_) => const CounterAppPage(),
       headerBuilder: (context) {
-        return const FlutterDeckHeader(
-          title: '活用例その1: カウンターアプリ',
+        return FlutterDeckHeader(
+          title: AppLocalizations.of(context)!.case1Title,
         );
       },
     );

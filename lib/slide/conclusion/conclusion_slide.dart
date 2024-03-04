@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_night_2/slide/conclusion/conclusion_page.dart';
 
 class ConclusionSlide extends FlutterDeckSlideWidget {
@@ -17,8 +18,8 @@ class ConclusionSlide extends FlutterDeckSlideWidget {
     return FlutterDeckSlide.template(
       contentBuilder: (_) => const ConclusionPage(),
       headerBuilder: (context) {
-        return const FlutterDeckHeader(
-          title: 'まとめ',
+        return FlutterDeckHeader(
+          title: AppLocalizations.of(context)!.conclusion,
         );
       },
     );

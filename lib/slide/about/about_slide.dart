@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class AboutSlide extends FlutterDeckSlideWidget {
   const AboutSlide()
@@ -15,7 +16,7 @@ class AboutSlide extends FlutterDeckSlideWidget {
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.bigFact(
       title: 'flutter_deck',
-      subtitle: 'Flutter アプリで登壇資料を作る',
+      subtitle: AppLocalizations.of(context)!.slideDeckWithFlutter,
     );
   }
 }

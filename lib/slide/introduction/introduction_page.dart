@@ -1,30 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_night_2/component/components.dart';
 import 'package:gap/gap.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class IntroductionPage extends StatelessWidget {
   const IntroductionPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Padding(
-        padding: EdgeInsets.all(32),
+        padding: const EdgeInsets.all(32),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Label('ちゅーやん（中條 剛）'),
-            Gap(60),
-            Paragraph(
-              'フリーランスの Flutter アプリ開発者です。'
-              '講師や技術顧問もやってます。',
-            ),
-            Gap(24),
-            Paragraph(
-              'Zenn や hashnode への記事の投稿やパッケージ開発などもやっています。',
-            ),
-            Gap(60),
-            Expanded(
+            Label(AppLocalizations.of(context)!.name),
+            const Gap(60),
+            Paragraph(AppLocalizations.of(context)!.myJob),
+            const Gap(24),
+            Paragraph(AppLocalizations.of(context)!.ossActivities),
+            const Gap(60),
+            const Expanded(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

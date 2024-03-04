@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_night_2/component/components.dart';
 import 'package:gap/gap.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ConclusionPage extends StatelessWidget {
   const ConclusionPage({super.key});
@@ -13,26 +14,28 @@ class ConclusionPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Label('flutter_deck は'),
+            Label(AppLocalizations.of(context)!.conclusion11),
             const Gap(60),
-            const RichParagraph(
+            RichParagraph(
               [
                 TextSpan(
-                  text: '「スライドの中でコードを動かせる」',
-                  style: TextStyle(
+                  text: AppLocalizations.of(context)!.conclusion12,
+                  style: const TextStyle(
                     fontWeight: FontWeight.w700,
                     color: Colors.blue,
                   ),
                 ),
-                TextSpan(text: 'ので、内部状態を可視化したりデモを入れたりするのに最適'),
+                TextSpan(
+                  text: AppLocalizations.of(context)!.conclusion13,
+                ),
               ],
             ),
             const Gap(32),
-            const Paragraph('Flutter アプリ開発における工夫がそのまま使える（バージョン管理など）'),
+            Paragraph(AppLocalizations.of(context)!.conclusion2),
             const Gap(32),
-            const Paragraph('資料作成も意外と時間がかからない。この資料で3, 4時間くらい。'),
+            Paragraph(AppLocalizations.of(context)!.conclusion3),
             const Gap(32),
-            const Paragraph('資料の公開は Flutter Web で GitHub Pages へ（たぶん）'),
+            Paragraph(AppLocalizations.of(context)!.conclusion4),
             const Gap(60),
             Expanded(
               child: Align(

@@ -5,6 +5,7 @@ import 'package:flutter_night_2/slide/asyncvalue/todo_list.dart';
 import 'package:flutter_night_2/slide/asyncvalue/todo_list_app.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class AsyncValuePage extends StatelessWidget {
   const AsyncValuePage({super.key});
@@ -47,7 +48,7 @@ class _AsyncValueState extends ConsumerWidget {
       child: Column(
         children: [
           const Gap(60),
-          const Label('AsyncValueの状態'),
+          Label(AppLocalizations.of(context)!.stateOfAsyncValue),
           const Gap(120),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -84,7 +85,7 @@ class _AsyncValueState extends ConsumerWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Paragraph('強制エラー'),
+              Paragraph(AppLocalizations.of(context)!.forceError),
               const Gap(16),
               Switch(
                 value: forceError,

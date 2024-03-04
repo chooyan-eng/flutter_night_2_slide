@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_night_2/component/components.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class EndSlide extends FlutterDeckSlideWidget {
   const EndSlide()
@@ -16,8 +17,8 @@ class EndSlide extends FlutterDeckSlideWidget {
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.custom(
       builder: (context) {
-        return const Center(
-          child: Label('ご清聴ありがとうございました'),
+        return Center(
+          child: Label(AppLocalizations.of(context)!.thanks),
         );
       },
     );

@@ -5,6 +5,7 @@ import 'package:flutter_night_2/slide/crop_your_image/crop_your_image_app.dart';
 import 'package:flutter_night_2/slide/crop_your_image/cropped_image.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CropYourImagePage extends ConsumerWidget {
   const CropYourImagePage({super.key});
@@ -23,9 +24,11 @@ class CropYourImagePage extends ConsumerWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const Label('crop_your_image のデモ'),
+                Label(AppLocalizations.of(context)!.cropYourImageDemo),
                 const Gap(20),
-                const Paragraph('切り抜いた画像は ↓ のボックスに表示されます'),
+                Paragraph(
+                  AppLocalizations.of(context)!.croppedImageDescription,
+                ),
                 const SizedBox(height: 60),
                 Container(
                   width: 300,

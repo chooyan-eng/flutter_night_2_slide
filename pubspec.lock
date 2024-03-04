@@ -197,10 +197,10 @@ packages:
     dependency: "direct main"
     description:
       name: crop_your_image
-      sha256: db530b9f1b8aa206793541da0507c58c95527d8fc0e56718b27e0266ea8ed12c
+      sha256: "586a739aa24350b4f4ddc1207ca5e3c58fdc625972f03fe39db9f5a5d46f5e62"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.1"
+    version: "1.0.2"
   crypto:
     dependency: transitive
     description:
@@ -274,10 +274,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_deck
-      sha256: "7150dfcc83656b0aece488c86fba73ac8b996a2e74eba9055b251b137f5faba4"
+      sha256: "4cc59304e665c226aa863172f435a996f64b2d269eb208b7a50dcb6e9d795ad7"
       url: "https://pub.dev"
     source: hosted
-    version: "0.11.0"
+    version: "0.12.0"
   flutter_highlight:
     dependency: transitive
     description:
@@ -294,6 +294,11 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.3"
+  flutter_localizations:
+    dependency: "direct main"
+    description: flutter
+    source: sdk
+    version: "0.0.0"
   flutter_riverpod:
     dependency: "direct main"
     description:
@@ -400,6 +405,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.1.7"
+  intl:
+    dependency: "direct main"
+    description:
+      name: intl
+      sha256: "3bc132a9dbce73a7e4a21a17d06e1878839ffbf975568bc875c60537824b0c4d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.18.1"
   io:
     dependency: transitive
     description:
@@ -785,10 +798,10 @@ packages:
     dependency: transitive
     description:
       name: vm_service
-      sha256: a2662fb1f114f4296cf3f5a50786a2d888268d7776cf681aa17d660ffa23b246
+      sha256: b3d56ff4341b8f182b96aceb2fa20e3dcb336b9f867bc0eafc0de10f1048e957
       url: "https://pub.dev"
     source: hosted
-    version: "14.0.0"
+    version: "13.0.0"
   watcher:
     dependency: transitive
     description:
